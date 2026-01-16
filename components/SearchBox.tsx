@@ -14,6 +14,7 @@ export function SearchBox({ onSearch, initialValue = "" }: SearchBoxProps) {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
 
   // Debounced search for suggestions
@@ -85,7 +86,7 @@ export function SearchBox({ onSearch, initialValue = "" }: SearchBoxProps) {
   // Close suggestions on outside click
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (inputRef.current && !inputRef.current.contains(e.target as Node)) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setShowSuggestions(false);
       }
     };
@@ -95,7 +96,7 @@ export function SearchBox({ onSearch, initialValue = "" }: SearchBoxProps) {
   }, []);
 
   return (
-    <div className="relative w-full max-w-xl mx-auto">
+    <div ref={containerRef} className="relative w-full max-w-xl mx-auto">
       <div className="relative">
         <input
           ref={inputRef}

@@ -88,7 +88,7 @@ export default function Home() {
 
           <div className="mt-6 p-4 bg-osrs-brown-dark/30 border border-osrs-brown-light/50 rounded-lg">
             <p className="text-gray-400 text-sm font-runescape">
-              Database includes 129 quest items from OSRS. Items marked as
+              Database includes 133 quest items from OSRS. Items marked as
               &quot;KEEP IT!&quot; are required for future quests or achievement
               diaries.
             </p>
@@ -97,8 +97,11 @@ export default function Home() {
       )}
 
       {/* Footer */}
-      <footer className="mt-16 text-center text-gray-600 text-sm">
-        <p>Not affiliated with Jagex Ltd.</p>
+      <footer className="mt-16 text-center text-gray-500 text-sm font-runescape space-y-2">
+        <p>
+          Data: <a href="https://www.runehq.com/" target="_blank" rel="noopener noreferrer" className="text-osrs-gold hover:underline">RuneHQ</a> | <a href="https://www.reddit.com/user/sour_soul/" target="_blank" rel="noopener noreferrer" className="text-osrs-gold hover:underline">sour_soul</a>
+        </p>
+        <p className="text-gray-600">Not affiliated with Jagex Ltd.</p>
       </footer>
     </main>
   );

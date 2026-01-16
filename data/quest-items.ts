@@ -1023,5 +1023,37 @@ export const questItems: QuestItem[] = [
     neededForQuest: false,
     usedFor: "Cheapens Various Travels, ETC",
     achievementDiary: "Varrock (Med) (Also need Kitty) Select Kitty Color"
+  },
+  {
+    name: "Royal Seed Pod",
+    foundInQuest: "Monkey Madness II",
+    usedInQuest: "N/A",
+    neededForQuest: false,
+    usedFor: "One-click teleport, works up to level 30 Wilderness",
+    achievementDiary: ""
+  },
+  {
+    name: "Salve Amulet",
+    foundInQuest: "Haunted Mine",
+    usedInQuest: "Achievement Diary",
+    neededForQuest: false,
+    usedFor: "15% Attack/Strength boost against undead (20% when enchanted)",
+    achievementDiary: "Morytania (Elite) Kill the Abyssal Sire with a Salve Amulet (ei)"
+  },
+  {
+    name: "Tarn's Diary",
+    foundInQuest: "Lair of Tarn Razorlor (miniquest)",
+    usedInQuest: "N/A",
+    neededForQuest: false,
+    usedFor: "Enchants Salve Amulet to (e) or (ei) version",
+    achievementDiary: ""
+  },
+  {
+    name: "Crystal Saw",
+    foundInQuest: "The Eyes of Glouphrie",
+    usedInQuest: "N/A",
+    neededForQuest: false,
+    usedFor: "+3 Construction boost, stacks with other boosts",
+    achievementDiary: ""
   }
 ];
