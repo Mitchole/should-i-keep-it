@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --osrs-gold: #ffb000;
+  --osrs-gold-dark: #c48c00;
+  --osrs-brown: #3d2b1f;
+  --osrs-brown-dark: #2a1d14;
+  --osrs-brown-light: #5a4332;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1410 0%, #2a1d14 50%, #1a1410 100%);
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--osrs-brown-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--osrs-gold-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--osrs-gold);
+}
+
+/* Selection colors */
+::selection {
+  background: var(--osrs-gold);
+  color: var(--osrs-brown-dark);
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--osrs-gold);
+  outline-offset: 2px;
+}
